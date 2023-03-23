@@ -60,6 +60,7 @@ function App() {
   };
 
   const deleteMovie = async (id) => {
+    console.log("delete");
     const movieDoc = doc(db, "movies", id);
     await deleteDoc(movieDoc);
   };
